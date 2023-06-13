@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "del build && cd ../../React/full-stack-course-part2/notes_project && npm run build && copy build"
+    "build:ui": "@powershell Remove-Item -Recurse -Force build && cd ../../React/full-stack-course-part2/notes_project && npm run build && @powershell Copy-Item build -Recurse ../../../NodeJS/notes-server"
   },
   "author": "John Navarro",
   "license": "MIT",
