@@ -2,10 +2,23 @@ post http://localhost:3001/api/notes
 Content-Type:application/json
 
 {
-	"content": "VS Code Rest Client",
+	"content": "VS Code Rest Client 2",
 	"important": true
 }
 
 ###
-get http://localhost:3001/api/notes/648cc38ca370624606c5dcbc
+get http://localhost:3001/api/notes/
 Content-Type: application/json
+
+###
+delete http://localhost:3001/api/notes/648cf031db86f165785fa3b9
+Content-Type: application/json
+
+###
+put http://localhost:3001/api/notes/64908cbc2c1844751250446b
+Content-Type: application/application/json
+
+{
+	"content": "Changed note",
+	"important": false
+}
